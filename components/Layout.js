@@ -23,7 +23,7 @@ const Layout = ({ children }) => {
     }
   }
   fetchUser()
-  }, [])
+  }, [state, dispatch])
   return (
     <>
       <Navbar />
