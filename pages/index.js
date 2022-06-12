@@ -12,8 +12,8 @@ export default function Home({postList}) {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Pizza Restaurant in Newyork</title>
-        <meta name="description" content="Best pizza shop in town" />
+        <title>Health Advisor</title>
+        <meta name="description" content="Health Advisor" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Main/>
@@ -27,7 +27,7 @@ export default function Home({postList}) {
 
 export const getServerSideProps = async () => {
 
-  const res = await axios.get("http://localhost:3000/api/post");
+  const res = await axios.get("https://health-advisor-blog.vercel.app/api/post");
   return {
     props: {
       postList: res.data, 

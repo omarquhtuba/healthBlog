@@ -23,7 +23,7 @@ export default Posts;
 
 export const getServerSideProps = async () => {
 
-  const res = await axios.get("http://localhost:3000/api/post");
+  const res = await axios.get("https://health-advisor-blog.vercel.app/api/post");
   return {
     props: {
       postList: res.data,

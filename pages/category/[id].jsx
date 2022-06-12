@@ -23,7 +23,7 @@ export default function category({pizzaList}) {
 }
 
 export const getServerSideProps = async ({params}) => {
-    const res = await axios.get(`http://localhost:3000/api/category?cat=${params.id}`);
+    const res = await axios.get(`https://health-advisor-blog.vercel.app/api/category?cat=${params.id}`);
     return {
       props: {
         pizzaList: res.data,
