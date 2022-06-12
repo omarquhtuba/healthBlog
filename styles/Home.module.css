@@ -1,0 +1,13 @@
+.container{
+   min-height: 78vh;
+}
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+@media screen and (max-width: 480px) {
+    .wrapper{
+        padding: 10px;
+    }
+}

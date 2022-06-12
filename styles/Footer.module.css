@@ -1,0 +1,57 @@
+.container {
+  height: 100px;
+  background-color: #222;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.item {
+  flex: 1;
+  position: relative;
+  display: flex;
+}
+
+.image{
+  border-radius: 50%;
+  margin: 10px;
+}
+.item:first-child{
+  margin-left: 80px;
+}
+.item:nth-child(2) {
+  flex: 2;
+  padding: 20px;
+  justify-content: space-between;
+}
+.card {
+  flex: 1;
+  padding: 0 20px;
+  margin-left: 40px;
+  gap: 10px;
+}
+.footimg{
+  margin-right: 10px;
+}
+.motto {
+  color: rgb(211, 211, 211);
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    height: auto;
+    text-align: center;
+  }
+  .item:first-child {
+    display: none;
+  }
+  .item:nth-child(2) {
+    flex: 2;
+    padding: 10px;
+    margin-left:-30px;
+  }
+  .item {
+    flex-direction: column;
+  }
+}

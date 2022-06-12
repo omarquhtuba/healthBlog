@@ -1,0 +1,71 @@
+.container {
+    margin: 20px;
+}
+.infoCon{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    margin:20px;
+}
+.infTitle{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+.label{
+    font-size:20px;
+    font-weight:500;
+    margin-right: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.input{
+    border: none;
+    border-bottom: 1px solid grey;
+    padding: 10px;
+    width:80%;
+    font-size: 16px;
+    margin-bottom:10px
+}
+.select, .input:focus{
+    outline: none;
+}
+
+.select{
+    padding: 3px;
+    border: none;
+    border-bottom: 1px solid grey;
+    cursor: pointer;
+    font-size: 16px;
+}
+.Create{
+    padding: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+    border: none;
+    background-color:indianred;
+    font-size: 18px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.Login{
+    height: 90vh;
+    margin-bottom:90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.logincon{
+    gap: 20px;
+}
+
+@media screen and (max-width: 480px){
+    .infoCon{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:space-around;
+        gap: 10px;
+        margin:20px;
+    } 
+}

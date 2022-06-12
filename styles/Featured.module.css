@@ -1,0 +1,151 @@
+.container {
+  height: calc(100vh - 80px);
+  background-color: #ffffff;
+  overflow: hidden;
+  position: relative;
+}
+.wra{
+  background-color: #2fad81d1;
+  margin: 30px;
+  border-radius:30px;
+  padding: 20px
+}
+.arrowContainer {
+  position: absolute;
+  width: 8%;
+  height: 15%;
+  top: -83px;
+  bottom: 0;
+  margin: auto;
+  cursor: pointer;
+  z-index: 2;
+  animation: scrollLeft 0.5s alternate ease infinite;
+}
+.RarrowContainer {
+  position: absolute;
+  width: 8%;
+  height: 15%;
+  top: -100px;
+  bottom: 0;
+  margin: auto;
+  cursor: pointer;
+  z-index: 2;
+  animation: scrollTop 0.5s alternate ease infinite;
+}
+@keyframes scrollTop{
+  from{
+      transform: translateX(2px)
+  }
+  to{
+      transform: translateX(0px)
+  }
+}
+
+@keyframes scrollLeft{
+  from{
+      transform: translateX(-2px)
+  }
+  to{
+      transform: translateX(0px)
+  }
+}
+.wrapper {
+  width: 400vw;
+  height: 100%;
+  display: flex;
+  transition: all 1.5s ease-in-out ;
+}
+.featuredContainer{
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.imgContainer {
+  flex: 1;
+  border-radius: 50%;
+  object-fit: cover;
+  position: relative;
+  text-align: center;
+}
+.image{
+  border-radius: 50%;
+  object-fit: cover;
+}
+.infoContainer{
+  flex: 1;
+}
+.inContainer{
+  text-align: center;
+  background-color:white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left:65px;
+  padding:20px;
+  height:370px;
+  width:400px;
+  border-radius: 40px;
+}
+.titleContainer{
+  text-align: center;
+  font-size:40px;
+  font-weight:600;
+  color:rgb(79, 78, 78);
+}
+.descContainer{
+  font-size:20px;
+  font-weight:600;
+  color:rgb(154, 152, 152);
+
+}
+.button{
+  padding:10px;
+  border:none;
+  background-color:rgba(77, 174, 127, 0.9);
+  border-radius:5px;
+  font-size:22px;
+  font-weight:600;
+  color:white;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  .container{
+    height: 70vh;
+  }
+  .wra{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 40px;
+  }
+  .imgContainer {
+    display: none;
+  }
+  .wrapper {
+    width: 400vw;
+    height: 100%;
+    display: flex;
+    transition: all 1.5s ease-in-out ;
+  }
+  .inContainer{ 
+    margin:10px;
+    padding:10px;
+    height:370px;
+    width:300px;
+    border-radius: 40px;
+  }
+  .arrowContainer {
+    width: 11%;
+    height: 15%;
+    top: -37px;
+    bottom: 0;
+  }
+  .RarrowContainer {
+    width: 11%;
+    height: 15%;
+    top: -35px;
+    bottom: 0;
+  }
+}
