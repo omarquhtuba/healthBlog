@@ -4,11 +4,9 @@ import { StoreProvider} from "../client/context"
 
 function MyApp({ Component, pageProps }) {
   return (
-    <StoreProvider>
       <Layout>
         <Component {...pageProps} />
       </Layout>
-    </StoreProvider>
   );
 }
 
