@@ -9,8 +9,9 @@ import {getSession} from 'next-auth/client'
 const Layout = ({ children }) => {
 
   const [state, dispatch] = useStore();
-  useEffect(async () => {
+  useEffect(() => {
     const authenticated = getValue(state, ["user", "authenticated"], false);
+    async function fetchUser (){
     if(!authenticated){
       dispatch({type: authConstants.LOGIN_REQUEST})
       const session = await getSession();
@@ -20,6 +21,8 @@ const Layout = ({ children }) => {
         dispatch({type: authConstants.LOGIN_FAILURE,payload:session})
       }
     }
+  }
+  fetchUser()
   }, [])
   return (
     <>
