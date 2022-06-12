@@ -8,7 +8,7 @@ import {getSession} from 'next-auth/client'
 
 const Layout = ({ children }) => {
 
-  const [state, dispatch] = useStore();
+  /*const [state, dispatch] = useStore();
   useEffect(() => {
     const authenticated = getValue(state, ["user", "authenticated"], false);
     async function fetchUser (){
@@ -23,7 +23,7 @@ const Layout = ({ children }) => {
     }
   }
   fetchUser()
-  }, [state, dispatch])
+  }, [state, dispatch])*/
   return (
     <>
       <Navbar />
