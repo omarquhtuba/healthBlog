@@ -24,8 +24,8 @@ const Featured = () => {
       </div>
       <div className={styles.wrapper} style={{ transform: `translateX(${-100 * index}vw)` }}>
         {ages.map((age) => (
-          <div className={styles.featuredContainer}>
-            <div className={styles.imgContainer} key={age.id}>
+          <div className={styles.featuredContainer}key={age.id} >
+            <div className={styles.imgContainer} >
               <Image className={styles.image} src={age.img} alt="" width='400px' height='400px' />
             </div>
             <div className={styles.infoContainer}>
@@ -33,7 +33,7 @@ const Featured = () => {
                 <div className={styles.titleContainer}>{age.title}</div>
                 <div className={styles.descContainer}>
                   <p>Check the latest recommendations for this age group</p>
-                  <Link href={`/category/${age.title}`}>
+                  <Link href={`/category/${age.title}`} passHref>
                   <button className={styles.button}>Check</button></Link>
                 </div>
               </div>

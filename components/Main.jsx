@@ -7,11 +7,11 @@ const Main = () => {
     <div className={styles.main}>
         <div className={styles.left}>
             <div className={styles.title}>YOUR HEALTH ADVISOR</div>
-            <div className={styles.desc}>We are interested in increasing people's awarness about their general health and providing them with the latest recommendations according to trusted studies</div>
+            <div className={styles.desc}>We are interested in increasing public awarness towards their general health and providing them with the latest recommendations according to trusted studies</div>
         </div>
         <div className={styles.right}>
         <div className={styles.imgContainer}>
-            <Image className={styles.imgContainer} src='/img/dose.jpg' width="480px" height="550px"/>
+            <Image className={styles.imgContainer} src='/img/dose.jpg' width="480px" height="550px" alt=""/>
             </div>
         </div>
     </div>
