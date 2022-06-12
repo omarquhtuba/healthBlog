@@ -36,7 +36,7 @@ const Product = ({post}) => {
 
 export const getServerSideProps = async ({ params }) => {
   const res = await axios.get(
-    `https://health-advisor-blog.vercel.app/api/post/${params.id}`
+    `https://health-advisor-blog-m38724uvp-omarquhtuba.vercel.app/api/post/${params.id}`
   );
   return {
     props: {
